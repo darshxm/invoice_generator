@@ -2,5 +2,6 @@
 /venvinvoice/
 *.csv
 *.txt
+*.pdf
 __pycache__/
 /generate_project_structure.py
