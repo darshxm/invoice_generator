@@ -198,6 +198,10 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the GNU GPL License. See the [LICENSE](LICENSE) file for details.
 
 ---
+![app_screen](https://github.com/user-attachments/assets/76ed94fa-575f-4bf3-b846-fcc7ae15ce85)
+
+![invoice_example](https://github.com/user-attachments/assets/ff1d8a92-d73a-4746-970c-36d4924a3a13)
+
 
 ## Acknowledgments
 - [ttkbootstrap](https://github.com/israel-dryer/ttkbootstrap) for the modern tkinter themes.
