@@ -5,3 +5,5 @@
 *.pdf
 __pycache__/
 /generate_project_structure.py
+/invoice_app_legacy.py
+/invoice_app.db
