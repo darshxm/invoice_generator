@@ -150,8 +150,8 @@ This project is licensed under the GNU GPL License. See the [LICENSE](LICENSE) f
 ---
 
 ## Author
-- Your Name
-- Contact: your.email@example.com
+- Darsh Modi
+
 
 Feel free to reach out for feedback or questions!
 
