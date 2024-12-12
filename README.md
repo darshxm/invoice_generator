@@ -4,7 +4,38 @@ A Python-based GUI application for creating and managing invoices, built using `
 
 Of course, there may be bugs, and I would be happy to fix them if you let me know, or if you're really generous and fix them yourself :)
 
-I hope this tool is useful, and saves you the headache of making invoices. If you are unfamiliar with Python, then I made a .exe version of the application to be used as an end user. This is entirely free to use, now and forever. If you are wary of viruses, feel free to download the source code and compile the application yourself (see "Packaging as an Executable").
+I hope this tool is useful, and saves you the headache of making invoices. If you are unfamiliar with Python, then I made a .exe version of the application to be used as an end user. 
+
+# Download the `.exe` File for This Project
+
+This repository is set up to automatically generate an `.exe` file for this project using GitHub Actions. You can download the executable directly from the repository without needing to manually run any packaging tools. Here's how:
+
+---
+
+## Steps to Download the `.exe` File
+
+1. **Go to the Actions Tab**  
+   - Navigate to the [Actions](../../actions) tab in this GitHub repository.
+
+2. **Select the Latest Workflow Run**  
+   - Find the most recent workflow run triggered by a push or pull request to the `main` branch.  
+   - Click on the workflow name (e.g., "Build EXE").
+
+3. **Download the Artifact**  
+   - Scroll down to the **Artifacts** section in the workflow summary.  
+   - You’ll find a downloadable artifact named `python-app-exe` (or a similar name).  
+   - Click on it to download the `.exe` file.
+
+4. **Run the `.exe` File**  
+   - Extract the `.exe` file (if needed).  
+   - Double-click the `.exe` file to run the application. No additional setup is required.
+
+---
+
+## Additional Notes
+
+- The `.exe` file is built using `pyinstaller` to ensure it works as a standalone executable on Windows systems.
+- If you encounter issues or need the application for a different platform, feel free to open an issue in the repository.
 
 ---
 
