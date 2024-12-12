@@ -1,0 +1,6 @@
+# .gitignore
+/venvinvoice/
+*.csv
+*.txt
+__pycache__/
+/generate_project_structure.py
