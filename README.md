@@ -1,6 +1,10 @@
 # Invoice Generator
 
-A Python-based GUI application for creating and managing invoices, built using `tkinter`, `ReportLab`, and `SQLite3`. This project is designed to streamline the process of generating professional invoices, maintaining a database of invoicing companies, clients, and invoices.
+A Python-based GUI application for creating and managing invoices, built using `tkinter`, `ReportLab`, and `SQLite3`. This project is designed to streamline the process of generating professional invoices, maintaining a database of invoicing companies, clients, and invoices. This app is also completely local, so no worries about a server being compromised in a faraway land with a company that "apologizes" for data leaks the size of a supermassive black hole.
+
+Of course, there may be bugs, and I would be happy to fix them if you let me know, or if you're really generous and fix them yourself :)
+
+I hope this tool is useful, and saves you the headache of making invoices. If you are unfamiliar with Python, then I made a .exe version of the application to be used as an end user. This is entirely free to use, now and forever. If you are wary of viruses, feel free to download the source code and compile the application yourself (see "Packaging as an Executable").
 
 ---
 
@@ -38,7 +42,7 @@ A Python-based GUI application for creating and managing invoices, built using `
 
 Install dependencies using the following command:
 ```bash
-pip install ttkbootstrap reportlab
+pip install -r requirements.txt
 ```
 
 ---
@@ -54,6 +58,7 @@ pip install ttkbootstrap reportlab
 ├── utils.py           # Utility functions
 ├── invoice_app.db     # SQLite3 database (auto-generated on first run)
 ├── invoice_app.log    # Log file for error tracking
+├── requirements.txt   # Dependencies for the project
 └── README.md          # Project documentation
 ```
 
@@ -120,12 +125,32 @@ self.style = ttk.Style("cosmo")  # Replace "cosmo" with a preferred style
 
 ---
 
-## Future Improvements
-- Multi-language support for invoices.
-- Exporting invoices as CSV or Excel files.
-- Integration with payment gateways.
+## Packaging as an Executable
+
+If you want to use the application without requiring Python installation, you can package it as an executable using `pyinstaller`:
+
+1. Install `pyinstaller`:
+```bash
+pip install pyinstaller
+```
+
+2. Create the executable:
+```bash
+pyinstaller --onefile --noconsole main.py
+```
+
+3. The executable will be located in the `dist` folder. Share this file with users who can run the application without installing Python.
+
+---
+
+## Possible Future Improvements
+- Multi-language support for invoices (let's be real, Dutch would probably be the only other language added).
+- A better GUI (Python may not have been the right choice for this).
+- Tax calculation and management for each of your companies.
+- Integration with email to directly send invoices and keep track of them in your local database.
 - Role-based access for multiple users.
 
+Feel free to pick up any one you think would be the most helpful and contribute! They are not listed in any particular order of importance.
 ---
 
 ## Contributing
@@ -139,7 +164,7 @@ Contributions are welcome! Please follow these steps:
 ---
 
 ## License
-This project is licensed under the GNU GPL License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -151,7 +176,6 @@ This project is licensed under the GNU GPL License. See the [LICENSE](LICENSE) f
 
 ## Author
 - Darsh Modi
-
 
 Feel free to reach out for feedback or questions!
 
